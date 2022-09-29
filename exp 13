@@ -1,0 +1,57 @@
+=== Run information ===
+
+Scheme:weka.classifiers.rules.DecisionTable -X 1 -S "weka.attributeSelection.BestFirst -D 1 -N 5"
+Relation:     iris
+Instances:    150
+Attributes:   5
+              sepallength
+              sepalwidth
+              petallength
+              petalwidth
+              class
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Decision Table:
+
+Number of training instances: 150
+Number of Rules : 3
+Non matches covered by Majority class.
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 12
+	Merit of best subset found:   96    
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 4,5
+
+Time taken to build model: 0.02 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         139               92.6667 %
+Incorrectly Classified Instances        11                7.3333 %
+Kappa statistic                          0.89  
+Mean absolute error                      0.092 
+Root mean squared error                  0.2087
+Relative absolute error                 20.6978 %
+Root relative squared error             44.2707 %
+Total Number of Instances              150     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        Iris-setosa
+                 0.88      0.05       0.898     0.88      0.889      0.946    Iris-versicolor
+                 0.9       0.06       0.882     0.9       0.891      0.947    Iris-virginica
+Weighted Avg.    0.927     0.037      0.927     0.927     0.927      0.964
+
+=== Confusion Matrix ===
+
+  a  b  c   <-- classified as
+ 50  0  0 |  a = Iris-setosa
+  0 44  6 |  b = Iris-versicolor
+  0  5 45 |  c = Iris-virginica
