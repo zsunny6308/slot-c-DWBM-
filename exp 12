@@ -1,0 +1,25 @@
+=== Run information ===
+
+Scheme:       weka.associations.FPGrowth -P 2 -I -1 -N 10 -T 0 -C 0.9 -D 0.05 -U 1.0 -M 0.1
+Relation:     Shopping.arff
+Instances:    8
+Attributes:   5
+              milk
+              bread
+              honey
+              ghee
+              jam
+=== Associator model (full training set) ===
+
+FPGrowth found 10 rules (displaying top 10)
+
+ 1. [milk=no]: 3 ==> [jam=no]: 3   <conf:(1)> lift:(1.14) lev:(0.05) conv:(0.38) 
+ 2. [bread=no]: 2 ==> [jam=no]: 2   <conf:(1)> lift:(1.14) lev:(0.03) conv:(0.25) 
+ 3. [bread=no]: 2 ==> [ghee=no]: 2   <conf:(1)> lift:(1.33) lev:(0.06) conv:(0.5) 
+ 4. [ghee=no, milk=no]: 2 ==> [jam=no]: 2   <conf:(1)> lift:(1.14) lev:(0.03) conv:(0.25) 
+ 5. [bread=no]: 2 ==> [jam=no, ghee=no]: 2   <conf:(1)> lift:(1.6) lev:(0.09) conv:(0.75) 
+ 6. [jam=no, bread=no]: 2 ==> [ghee=no]: 2   <conf:(1)> lift:(1.33) lev:(0.06) conv:(0.5) 
+ 7. [ghee=no, bread=no]: 2 ==> [jam=no]: 2   <conf:(1)> lift:(1.14) lev:(0.03) conv:(0.25) 
+ 8. [honey=no, milk=no]: 2 ==> [jam=no]: 2   <conf:(1)> lift:(1.14) lev:(0.03) conv:(0.25) 
+ 9. [jam=no, ghee=no, honey=no]: 1 ==> [milk=no]: 1   <conf:(1)> lift:(2.67) lev:(0.08) conv:(0.63) 
+10. [ghee=no, honey=no, milk=no]: 1 ==> [jam=no]: 1   <conf:(1)> lift:(1.14) lev:(0.02) conv:(0.13)
